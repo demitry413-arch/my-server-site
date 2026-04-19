@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIMASIO_777 WORLD</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #00ff00;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1a1a1a;
+            padding: 50px;
+            text-align: center;
+            border: 2px solid #00ff00;
+            border-radius: 20px;
+            box-shadow: 0 0 30px #00ff00;
+            width: 90%;
+            max-width: 500px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Блок с IP */
+        .ip-box {
+            background: black;
+            border: 2px dashed #00ff00;
+            padding: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 40px;
+            transition: 0.3s;
+        }
+
+        .ip-box:hover {
+            background: #003300;
+            transform: scale(1.02);
+        }
+
+        /* Кнопка Телеграм */
+        .btn-tg {
+            background: #24A1DE;
+            color: white;
+            padding: 18px 45px;
+            border: none;
+            border-radius: 12px;
+            font-weight: bold;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 1.1em;
+        }
+
+        .btn-tg:hover {
+            background: #1e88ba;
+            box-shadow: 0 0 20px #24A1DE;
+            transform: translateY(-3px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>DIMASIO_777 WORLD</h1>
+        
+        <!-- Клик сюда копирует IP -->
+        <div class="ip-box" onclick="copyIP()">
+            Dimasio_777.aternos.me:62425
+        </div>
+
+        <!-- Вставь свою ссылку вместо https://t.me -->
+        <a href="https://t.me/Dimasio_777World" target="_blank" class="btn-tg">
+            НАШ TELEGRAM КАНАЛ
+        </a>
+    </div>
+
+    <script>
+        function copyIP() {
+            const ip = "Dimasio_777.aternos.me:62425";
+            navigator.clipboard.writeText(ip);
+            alert("IP сервера скопирован!");
+        }
+    </script>
+
+</body>
+</html>
